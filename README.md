@@ -1,6 +1,9 @@
 # security_ml
 Detection of cyber attack log data(using UNSW-NB15)
 
+1. 다운로드받은 경로로 이동
+2. Cmd창에서 python app.py
+
 web에서 정보 입력 예시
 복사해서 사용하시오!>>
 1.292678,
