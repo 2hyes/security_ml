@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-model = pickle.load(open('.\decisiontreemodel.pkl', 'rb'))
+model = pickle.load(open('.\AdaBoostmodel.pkl', 'rb'))
 
 @app.route('/')
 def index():
