@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80B42A1F2515107700B9CF76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A1E2515107700B9CF76 /* AppDelegate.swift */; };
+		80B42A212515107700B9CF76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A202515107700B9CF76 /* SceneDelegate.swift */; };
+		80B42A232515107700B9CF76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A222515107700B9CF76 /* ViewController.swift */; };
+		80B42A262515107700B9CF76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B42A242515107700B9CF76 /* Main.storyboard */; };
+		80B42A282515107800B9CF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B42A272515107800B9CF76 /* Assets.xcassets */; };
+		80B42A2B2515107800B9CF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B42A292515107800B9CF76 /* LaunchScreen.storyboard */; };
+		80B42A362515107800B9CF76 /* FlaskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A352515107800B9CF76 /* FlaskAppTests.swift */; };
+		80B42A422515148E00B9CF76 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A412515148E00B9CF76 /* NetworkHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80B42A322515107800B9CF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80B42A132515107700B9CF76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80B42A1A2515107700B9CF76;
+			remoteInfo = FlaskApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80B42A1B2515107700B9CF76 /* FlaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B42A1E2515107700B9CF76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80B42A202515107700B9CF76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		80B42A222515107700B9CF76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80B42A252515107700B9CF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80B42A272515107800B9CF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80B42A2A2515107800B9CF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80B42A2C2515107800B9CF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B42A312515107800B9CF76 /* FlaskAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaskAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B42A352515107800B9CF76 /* FlaskAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlaskAppTests.swift; sourceTree = "<group>"; };
+		80B42A372515107800B9CF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B42A412515148E00B9CF76 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80B42A182515107700B9CF76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B42A2E2515107800B9CF76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80B42A122515107700B9CF76 = {
+			isa = PBXGroup;
+			children = (
+				80B42A1D2515107700B9CF76 /* FlaskApp */,
+				80B42A342515107800B9CF76 /* FlaskAppTests */,
+				80B42A1C2515107700B9CF76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80B42A1C2515107700B9CF76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80B42A1B2515107700B9CF76 /* FlaskApp.app */,
+				80B42A312515107800B9CF76 /* FlaskAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80B42A1D2515107700B9CF76 /* FlaskApp */ = {
+			isa = PBXGroup;
+			children = (
+				80B42A1E2515107700B9CF76 /* AppDelegate.swift */,
+				80B42A202515107700B9CF76 /* SceneDelegate.swift */,
+				80B42A222515107700B9CF76 /* ViewController.swift */,
+				80B42A242515107700B9CF76 /* Main.storyboard */,
+				80B42A272515107800B9CF76 /* Assets.xcassets */,
+				80B42A292515107800B9CF76 /* LaunchScreen.storyboard */,
+				80B42A2C2515107800B9CF76 /* Info.plist */,
+				80B42A412515148E00B9CF76 /* NetworkHelper.swift */,
+			);
+			path = FlaskApp;
+			sourceTree = "<group>";
+		};
+		80B42A342515107800B9CF76 /* FlaskAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				80B42A352515107800B9CF76 /* FlaskAppTests.swift */,
+				80B42A372515107800B9CF76 /* Info.plist */,
+			);
+			path = FlaskAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80B42A1A2515107700B9CF76 /* FlaskApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80B42A3A2515107800B9CF76 /* Build configuration list for PBXNativeTarget "FlaskApp" */;
+			buildPhases = (
+				80B42A172515107700B9CF76 /* Sources */,
+				80B42A182515107700B9CF76 /* Frameworks */,
+				80B42A192515107700B9CF76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlaskApp;
+			productName = FlaskApp;
+			productReference = 80B42A1B2515107700B9CF76 /* FlaskApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80B42A302515107800B9CF76 /* FlaskAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80B42A3D2515107800B9CF76 /* Build configuration list for PBXNativeTarget "FlaskAppTests" */;
+			buildPhases = (
+				80B42A2D2515107800B9CF76 /* Sources */,
+				80B42A2E2515107800B9CF76 /* Frameworks */,
+				80B42A2F2515107800B9CF76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80B42A332515107800B9CF76 /* PBXTargetDependency */,
+			);
+			name = FlaskAppTests;
+			productName = FlaskAppTests;
+			productReference = 80B42A312515107800B9CF76 /* FlaskAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80B42A132515107700B9CF76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Sue Cho";
+				TargetAttributes = {
+					80B42A1A2515107700B9CF76 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					80B42A302515107800B9CF76 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 80B42A1A2515107700B9CF76;
+					};
+				};
+			};
+			buildConfigurationList = 80B42A162515107700B9CF76 /* Build configuration list for PBXProject "FlaskApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80B42A122515107700B9CF76;
+			productRefGroup = 80B42A1C2515107700B9CF76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80B42A1A2515107700B9CF76 /* FlaskApp */,
+				80B42A302515107800B9CF76 /* FlaskAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80B42A192515107700B9CF76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B42A2B2515107800B9CF76 /* LaunchScreen.storyboard in Resources */,
+				80B42A282515107800B9CF76 /* Assets.xcassets in Resources */,
+				80B42A262515107700B9CF76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B42A2F2515107800B9CF76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80B42A172515107700B9CF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B42A422515148E00B9CF76 /* NetworkHelper.swift in Sources */,
+				80B42A232515107700B9CF76 /* ViewController.swift in Sources */,
+				80B42A1F2515107700B9CF76 /* AppDelegate.swift in Sources */,
+				80B42A212515107700B9CF76 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80B42A2D2515107800B9CF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B42A362515107800B9CF76 /* FlaskAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80B42A332515107800B9CF76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80B42A1A2515107700B9CF76 /* FlaskApp */;
+			targetProxy = 80B42A322515107800B9CF76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80B42A242515107700B9CF76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80B42A252515107700B9CF76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80B42A292515107800B9CF76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80B42A2A2515107800B9CF76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80B42A382515107800B9CF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80B42A392515107800B9CF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80B42A3B2515107800B9CF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPSVCU4H4D;
+				INFOPLIST_FILE = FlaskApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.FlaskApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80B42A3C2515107800B9CF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPSVCU4H4D;
+				INFOPLIST_FILE = FlaskApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.FlaskApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80B42A3E2515107800B9CF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPSVCU4H4D;
+				INFOPLIST_FILE = FlaskAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.FlaskAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlaskApp.app/FlaskApp";
+			};
+			name = Debug;
+		};
+		80B42A3F2515107800B9CF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPSVCU4H4D;
+				INFOPLIST_FILE = FlaskAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.FlaskAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlaskApp.app/FlaskApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80B42A162515107700B9CF76 /* Build configuration list for PBXProject "FlaskApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B42A382515107800B9CF76 /* Debug */,
+				80B42A392515107800B9CF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80B42A3A2515107800B9CF76 /* Build configuration list for PBXNativeTarget "FlaskApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B42A3B2515107800B9CF76 /* Debug */,
+				80B42A3C2515107800B9CF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80B42A3D2515107800B9CF76 /* Build configuration list for PBXNativeTarget "FlaskAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B42A3E2515107800B9CF76 /* Debug */,
+				80B42A3F2515107800B9CF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80B42A132515107700B9CF76 /* Project object */;
+}

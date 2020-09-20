@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  GetFromFlask
+//  FlaskApp
 //
-//  Created by Sue Cho on 2020/08/27.
+//  Created by Sue Cho on 2020/09/19.
 //  Copyright © 2020 Sue Cho. All rights reserved.
 //
 
