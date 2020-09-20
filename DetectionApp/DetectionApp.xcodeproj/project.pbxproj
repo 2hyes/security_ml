@@ -79,12 +79,11 @@
 		8099C44F2517991900C9A4E9 /* DetectionApp */ = {
 			isa = PBXGroup;
 			children = (
+				8099C47425179DEA00C9A4E9 /* Network */,
+				8099C4732517996F00C9A4E9 /* Resources */,
+				8099C4722517996200C9A4E9 /* Controller */,
 				8099C4502517991900C9A4E9 /* AppDelegate.swift */,
 				8099C4522517991900C9A4E9 /* SceneDelegate.swift */,
-				8099C4542517991900C9A4E9 /* ViewController.swift */,
-				8099C4562517991900C9A4E9 /* Main.storyboard */,
-				8099C4592517991B00C9A4E9 /* Assets.xcassets */,
-				8099C45B2517991B00C9A4E9 /* LaunchScreen.storyboard */,
 				8099C45E2517991B00C9A4E9 /* Info.plist */,
 			);
 			path = DetectionApp;
@@ -97,6 +96,31 @@
 				8099C4692517991B00C9A4E9 /* Info.plist */,
 			);
 			path = DetectionAppTests;
+			sourceTree = "<group>";
+		};
+		8099C4722517996200C9A4E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8099C4542517991900C9A4E9 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8099C4732517996F00C9A4E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8099C4562517991900C9A4E9 /* Main.storyboard */,
+				8099C4592517991B00C9A4E9 /* Assets.xcassets */,
+				8099C45B2517991B00C9A4E9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8099C47425179DEA00C9A4E9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
