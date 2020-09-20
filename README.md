@@ -2,7 +2,8 @@
 Detection of cyber attack log data(using UNSW-NB15)
 
 1. 다운로드받은 경로로 이동
-2. Cmd창에서 python app.py
+2. Cmd창에서 python app.py   
+
 issue)) 서버에 test데이터셋 올려놓고, 거기서 preprocess(scale)하려고하는데, 계속 오류나는 상황..  
 똑같은 코드를 미리 돌려서, 전처리한 데이터 올리면 오류안남...  
 
