@@ -7,50 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8099C4512517991900C9A4E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099C4502517991900C9A4E9 /* AppDelegate.swift */; };
-		8099C4532517991900C9A4E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099C4522517991900C9A4E9 /* SceneDelegate.swift */; };
-		8099C4552517991900C9A4E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099C4542517991900C9A4E9 /* ViewController.swift */; };
-		8099C4582517991900C9A4E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8099C4562517991900C9A4E9 /* Main.storyboard */; };
-		8099C45A2517991B00C9A4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8099C4592517991B00C9A4E9 /* Assets.xcassets */; };
-		8099C45D2517991B00C9A4E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8099C45B2517991B00C9A4E9 /* LaunchScreen.storyboard */; };
-		8099C4682517991B00C9A4E9 /* DetectionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099C4672517991B00C9A4E9 /* DetectionAppTests.swift */; };
-		8099C47625179E3200C9A4E9 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099C47525179E3200C9A4E9 /* NetworkHelper.swift */; };
+		80B42A1F2515107700B9CF76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A1E2515107700B9CF76 /* AppDelegate.swift */; };
+		80B42A212515107700B9CF76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A202515107700B9CF76 /* SceneDelegate.swift */; };
+		80B42A232515107700B9CF76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A222515107700B9CF76 /* ViewController.swift */; };
+		80B42A262515107700B9CF76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B42A242515107700B9CF76 /* Main.storyboard */; };
+		80B42A282515107800B9CF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B42A272515107800B9CF76 /* Assets.xcassets */; };
+		80B42A2B2515107800B9CF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B42A292515107800B9CF76 /* LaunchScreen.storyboard */; };
+		80B42A362515107800B9CF76 /* FlaskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A352515107800B9CF76 /* FlaskAppTests.swift */; };
+		80B42A422515148E00B9CF76 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B42A412515148E00B9CF76 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8099C4642517991B00C9A4E9 /* PBXContainerItemProxy */ = {
+		80B42A322515107800B9CF76 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8099C4452517991900C9A4E9 /* Project object */;
+			containerPortal = 80B42A132515107700B9CF76 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8099C44C2517991900C9A4E9;
-			remoteInfo = DetectionApp;
+			remoteGlobalIDString = 80B42A1A2515107700B9CF76;
+			remoteInfo = FlaskApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8099C44D2517991900C9A4E9 /* DetectionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8099C4502517991900C9A4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8099C4522517991900C9A4E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8099C4542517991900C9A4E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8099C4572517991900C9A4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8099C4592517991B00C9A4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8099C45C2517991B00C9A4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8099C45E2517991B00C9A4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8099C4632517991B00C9A4E9 /* DetectionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8099C4672517991B00C9A4E9 /* DetectionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionAppTests.swift; sourceTree = "<group>"; };
-		8099C4692517991B00C9A4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8099C47525179E3200C9A4E9 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		80B42A1B2515107700B9CF76 /* FlaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B42A1E2515107700B9CF76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80B42A202515107700B9CF76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		80B42A222515107700B9CF76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80B42A252515107700B9CF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80B42A272515107800B9CF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80B42A2A2515107800B9CF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80B42A2C2515107800B9CF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B42A312515107800B9CF76 /* FlaskAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaskAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B42A352515107800B9CF76 /* FlaskAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlaskAppTests.swift; sourceTree = "<group>"; };
+		80B42A372515107800B9CF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B42A412515148E00B9CF76 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8099C44A2517991900C9A4E9 /* Frameworks */ = {
+		80B42A182515107700B9CF76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8099C4602517991B00C9A4E9 /* Frameworks */ = {
+		80B42A2E2515107800B9CF76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,130 +60,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8099C4442517991900C9A4E9 = {
+		80B42A122515107700B9CF76 = {
 			isa = PBXGroup;
 			children = (
-				8099C44F2517991900C9A4E9 /* DetectionApp */,
-				8099C4662517991B00C9A4E9 /* DetectionAppTests */,
-				8099C44E2517991900C9A4E9 /* Products */,
+				80B42A1D2515107700B9CF76 /* FlaskApp */,
+				80B42A342515107800B9CF76 /* FlaskAppTests */,
+				80B42A1C2515107700B9CF76 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8099C44E2517991900C9A4E9 /* Products */ = {
+		80B42A1C2515107700B9CF76 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8099C44D2517991900C9A4E9 /* DetectionApp.app */,
-				8099C4632517991B00C9A4E9 /* DetectionAppTests.xctest */,
+				80B42A1B2515107700B9CF76 /* FlaskApp.app */,
+				80B42A312515107800B9CF76 /* FlaskAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8099C44F2517991900C9A4E9 /* DetectionApp */ = {
+		80B42A1D2515107700B9CF76 /* FlaskApp */ = {
 			isa = PBXGroup;
 			children = (
-				8099C47425179DEA00C9A4E9 /* Network */,
-				8099C4732517996F00C9A4E9 /* Resources */,
-				8099C4722517996200C9A4E9 /* Controller */,
-				8099C4502517991900C9A4E9 /* AppDelegate.swift */,
-				8099C4522517991900C9A4E9 /* SceneDelegate.swift */,
-				8099C45E2517991B00C9A4E9 /* Info.plist */,
+				80B42A1E2515107700B9CF76 /* AppDelegate.swift */,
+				80B42A202515107700B9CF76 /* SceneDelegate.swift */,
+				80B42A222515107700B9CF76 /* ViewController.swift */,
+				80B42A242515107700B9CF76 /* Main.storyboard */,
+				80B42A272515107800B9CF76 /* Assets.xcassets */,
+				80B42A292515107800B9CF76 /* LaunchScreen.storyboard */,
+				80B42A2C2515107800B9CF76 /* Info.plist */,
+				80B42A412515148E00B9CF76 /* NetworkHelper.swift */,
 			);
-			path = DetectionApp;
+			path = FlaskApp;
 			sourceTree = "<group>";
 		};
-		8099C4662517991B00C9A4E9 /* DetectionAppTests */ = {
+		80B42A342515107800B9CF76 /* FlaskAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8099C4672517991B00C9A4E9 /* DetectionAppTests.swift */,
-				8099C4692517991B00C9A4E9 /* Info.plist */,
+				80B42A352515107800B9CF76 /* FlaskAppTests.swift */,
+				80B42A372515107800B9CF76 /* Info.plist */,
 			);
-			path = DetectionAppTests;
-			sourceTree = "<group>";
-		};
-		8099C4722517996200C9A4E9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8099C4542517991900C9A4E9 /* ViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8099C4732517996F00C9A4E9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8099C4562517991900C9A4E9 /* Main.storyboard */,
-				8099C4592517991B00C9A4E9 /* Assets.xcassets */,
-				8099C45B2517991B00C9A4E9 /* LaunchScreen.storyboard */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		8099C47425179DEA00C9A4E9 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				8099C47525179E3200C9A4E9 /* NetworkHelper.swift */,
-			);
-			path = Network;
+			path = FlaskAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8099C44C2517991900C9A4E9 /* DetectionApp */ = {
+		80B42A1A2515107700B9CF76 /* FlaskApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8099C46C2517991B00C9A4E9 /* Build configuration list for PBXNativeTarget "DetectionApp" */;
+			buildConfigurationList = 80B42A3A2515107800B9CF76 /* Build configuration list for PBXNativeTarget "FlaskApp" */;
 			buildPhases = (
-				8099C4492517991900C9A4E9 /* Sources */,
-				8099C44A2517991900C9A4E9 /* Frameworks */,
-				8099C44B2517991900C9A4E9 /* Resources */,
+				80B42A172515107700B9CF76 /* Sources */,
+				80B42A182515107700B9CF76 /* Frameworks */,
+				80B42A192515107700B9CF76 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DetectionApp;
-			productName = DetectionApp;
-			productReference = 8099C44D2517991900C9A4E9 /* DetectionApp.app */;
+			name = FlaskApp;
+			productName = FlaskApp;
+			productReference = 80B42A1B2515107700B9CF76 /* FlaskApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8099C4622517991B00C9A4E9 /* DetectionAppTests */ = {
+		80B42A302515107800B9CF76 /* FlaskAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8099C46F2517991B00C9A4E9 /* Build configuration list for PBXNativeTarget "DetectionAppTests" */;
+			buildConfigurationList = 80B42A3D2515107800B9CF76 /* Build configuration list for PBXNativeTarget "FlaskAppTests" */;
 			buildPhases = (
-				8099C45F2517991B00C9A4E9 /* Sources */,
-				8099C4602517991B00C9A4E9 /* Frameworks */,
-				8099C4612517991B00C9A4E9 /* Resources */,
+				80B42A2D2515107800B9CF76 /* Sources */,
+				80B42A2E2515107800B9CF76 /* Frameworks */,
+				80B42A2F2515107800B9CF76 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8099C4652517991B00C9A4E9 /* PBXTargetDependency */,
+				80B42A332515107800B9CF76 /* PBXTargetDependency */,
 			);
-			name = DetectionAppTests;
-			productName = DetectionAppTests;
-			productReference = 8099C4632517991B00C9A4E9 /* DetectionAppTests.xctest */;
+			name = FlaskAppTests;
+			productName = FlaskAppTests;
+			productReference = 80B42A312515107800B9CF76 /* FlaskAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8099C4452517991900C9A4E9 /* Project object */ = {
+		80B42A132515107700B9CF76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Sue Cho";
 				TargetAttributes = {
-					8099C44C2517991900C9A4E9 = {
+					80B42A1A2515107700B9CF76 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
-					8099C4622517991B00C9A4E9 = {
+					80B42A302515107800B9CF76 = {
 						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = 8099C44C2517991900C9A4E9;
+						TestTargetID = 80B42A1A2515107700B9CF76;
 					};
 				};
 			};
-			buildConfigurationList = 8099C4482517991900C9A4E9 /* Build configuration list for PBXProject "DetectionApp" */;
+			buildConfigurationList = 80B42A162515107700B9CF76 /* Build configuration list for PBXProject "FlaskApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,29 +167,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 8099C4442517991900C9A4E9;
-			productRefGroup = 8099C44E2517991900C9A4E9 /* Products */;
+			mainGroup = 80B42A122515107700B9CF76;
+			productRefGroup = 80B42A1C2515107700B9CF76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8099C44C2517991900C9A4E9 /* DetectionApp */,
-				8099C4622517991B00C9A4E9 /* DetectionAppTests */,
+				80B42A1A2515107700B9CF76 /* FlaskApp */,
+				80B42A302515107800B9CF76 /* FlaskAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8099C44B2517991900C9A4E9 /* Resources */ = {
+		80B42A192515107700B9CF76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8099C45D2517991B00C9A4E9 /* LaunchScreen.storyboard in Resources */,
-				8099C45A2517991B00C9A4E9 /* Assets.xcassets in Resources */,
-				8099C4582517991900C9A4E9 /* Main.storyboard in Resources */,
+				80B42A2B2515107800B9CF76 /* LaunchScreen.storyboard in Resources */,
+				80B42A282515107800B9CF76 /* Assets.xcassets in Resources */,
+				80B42A262515107700B9CF76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8099C4612517991B00C9A4E9 /* Resources */ = {
+		80B42A2F2515107800B9CF76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,48 +199,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8099C4492517991900C9A4E9 /* Sources */ = {
+		80B42A172515107700B9CF76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8099C47625179E3200C9A4E9 /* NetworkHelper.swift in Sources */,
-				8099C4552517991900C9A4E9 /* ViewController.swift in Sources */,
-				8099C4512517991900C9A4E9 /* AppDelegate.swift in Sources */,
-				8099C4532517991900C9A4E9 /* SceneDelegate.swift in Sources */,
+				80B42A422515148E00B9CF76 /* NetworkHelper.swift in Sources */,
+				80B42A232515107700B9CF76 /* ViewController.swift in Sources */,
+				80B42A1F2515107700B9CF76 /* AppDelegate.swift in Sources */,
+				80B42A212515107700B9CF76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8099C45F2517991B00C9A4E9 /* Sources */ = {
+		80B42A2D2515107800B9CF76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8099C4682517991B00C9A4E9 /* DetectionAppTests.swift in Sources */,
+				80B42A362515107800B9CF76 /* FlaskAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8099C4652517991B00C9A4E9 /* PBXTargetDependency */ = {
+		80B42A332515107800B9CF76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8099C44C2517991900C9A4E9 /* DetectionApp */;
-			targetProxy = 8099C4642517991B00C9A4E9 /* PBXContainerItemProxy */;
+			target = 80B42A1A2515107700B9CF76 /* FlaskApp */;
+			targetProxy = 80B42A322515107800B9CF76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8099C4562517991900C9A4E9 /* Main.storyboard */ = {
+		80B42A242515107700B9CF76 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8099C4572517991900C9A4E9 /* Base */,
+				80B42A252515107700B9CF76 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8099C45B2517991B00C9A4E9 /* LaunchScreen.storyboard */ = {
+		80B42A292515107800B9CF76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8099C45C2517991B00C9A4E9 /* Base */,
+				80B42A2A2515107800B9CF76 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -272,7 +248,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8099C46A2517991B00C9A4E9 /* Debug */ = {
+		80B42A382515107800B9CF76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +308,7 @@
 			};
 			name = Debug;
 		};
-		8099C46B2517991B00C9A4E9 /* Release */ = {
+		80B42A392515107800B9CF76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -386,117 +362,117 @@
 			};
 			name = Release;
 		};
-		8099C46D2517991B00C9A4E9 /* Debug */ = {
+		80B42A3B2515107800B9CF76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPSVCU4H4D;
-				INFOPLIST_FILE = DetectionApp/Info.plist;
+				INFOPLIST_FILE = FlaskApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.DetectionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.FlaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8099C46E2517991B00C9A4E9 /* Release */ = {
+		80B42A3C2515107800B9CF76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPSVCU4H4D;
-				INFOPLIST_FILE = DetectionApp/Info.plist;
+				INFOPLIST_FILE = FlaskApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.DetectionApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.FlaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		8099C4702517991B00C9A4E9 /* Debug */ = {
+		80B42A3E2515107800B9CF76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPSVCU4H4D;
-				INFOPLIST_FILE = DetectionAppTests/Info.plist;
+				INFOPLIST_FILE = FlaskAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.DetectionAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.FlaskAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetectionApp.app/DetectionApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlaskApp.app/FlaskApp";
 			};
 			name = Debug;
 		};
-		8099C4712517991B00C9A4E9 /* Release */ = {
+		80B42A3F2515107800B9CF76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPSVCU4H4D;
-				INFOPLIST_FILE = DetectionAppTests/Info.plist;
+				INFOPLIST_FILE = FlaskAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.DetectionAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sueaty.FlaskAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetectionApp.app/DetectionApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlaskApp.app/FlaskApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8099C4482517991900C9A4E9 /* Build configuration list for PBXProject "DetectionApp" */ = {
+		80B42A162515107700B9CF76 /* Build configuration list for PBXProject "FlaskApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8099C46A2517991B00C9A4E9 /* Debug */,
-				8099C46B2517991B00C9A4E9 /* Release */,
+				80B42A382515107800B9CF76 /* Debug */,
+				80B42A392515107800B9CF76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8099C46C2517991B00C9A4E9 /* Build configuration list for PBXNativeTarget "DetectionApp" */ = {
+		80B42A3A2515107800B9CF76 /* Build configuration list for PBXNativeTarget "FlaskApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8099C46D2517991B00C9A4E9 /* Debug */,
-				8099C46E2517991B00C9A4E9 /* Release */,
+				80B42A3B2515107800B9CF76 /* Debug */,
+				80B42A3C2515107800B9CF76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8099C46F2517991B00C9A4E9 /* Build configuration list for PBXNativeTarget "DetectionAppTests" */ = {
+		80B42A3D2515107800B9CF76 /* Build configuration list for PBXNativeTarget "FlaskAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8099C4702517991B00C9A4E9 /* Debug */,
-				8099C4712517991B00C9A4E9 /* Release */,
+				80B42A3E2515107800B9CF76 /* Debug */,
+				80B42A3F2515107800B9CF76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8099C4452517991900C9A4E9 /* Project object */;
+	rootObject = 80B42A132515107700B9CF76 /* Project object */;
 }
