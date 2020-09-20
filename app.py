@@ -9,8 +9,8 @@ model = pickle.load(open('.\AdaBoostmodel.pkl', 'rb'))
 
 def getPredictedAttack():
     if request.method == 'POST':
-        i = request.form['log']
-        preds = test.test_preds(model)
+        selected_date = request.form['date']
+        preds = test.test_preds(model, selected_date)
 
         global prediction
         prediction = preds_mapping.attack_category_mapping(preds)
