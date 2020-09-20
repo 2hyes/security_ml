@@ -2,7 +2,12 @@
 <!doctype html>
 <html>
    <body>
-
+<!--
     <h1>예측 결과는 {{result}}</h1>
+-->
+<h1>
+예측 결과:<br>
+{% for i in result %} {{ i }} {% endfor %}
+</h1>
    </body>
 </html>
