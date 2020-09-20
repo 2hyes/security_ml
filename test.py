@@ -1,27 +1,30 @@
 import pickle
-from sklearn import preprocessing
-
-
-#### preprocessing
+from sklearn.utils import shuffle
 
 """
-예측변수 y를 숫자로 매핑(인코딩)
-: 범주형클래스를 numerical로 변환해줌
+웹에서 입력한 날짜의 로그를 샘플링
 """
-def label_encoding(cyberattack_data):
-    le = preprocessing.LabelEncoder()
-    num_cat = le.fit_transform(cyberattack_data.attack_cat) #변환된 attack_cat
-
-    y = num_cat.tolist() # y(true class)
-    X = cyberattack_data.drop(columns=['id','attack_cat','label'])
-
-    return X, y
-
-def test_preds(model):
-
+def daily_log(selected_date):
     testSet = pickle.load(open('testSet.pkl','rb'))
+    testSet = shuffle(testSet)
+        
+    if selected_date == 1:
+        return testSet[0:len(testSet) // 5]
+    
+    elif selected_date == 2:
+        return testSet[len(testSet) // 5 : len(testSet) // 5 * 2]
+    
+    elif selected_date == 3:
+        return testSet[len(testSet) // 5 * 2 : len(testSet) // 5 * 3]
+    
+    elif selected_date == 4:
+        return testSet[len(testSet) // 5 * 4 : len(testSet)]
 
-    X_test, _ = label_encoding(testSet)
+def test_preds(model, selected_date):
+    selected_date = int(selected_date)
+    testSample = daily_log(selected_date)
+    X_test = testSample.drop(columns=['id','attack_cat','label'])
+    #X_test, _ = label_encoding(testSample)
 
     scaler = pickle.load(open('scaler.pkl','rb'))
     X_test = scaler.transform(X_test)
