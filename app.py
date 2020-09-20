@@ -1,8 +1,10 @@
 from flask import Flask,  render_template, request, jsonify
 import pickle
+import numpy as np
+import testset
 
 app = Flask(__name__)
-model = pickle.load(open('.\dtmodel.pkl', 'rb'))
+model = pickle.load(open('.\decisiontreemodel.pkl', 'rb'))
 
 @app.route('/')
 def index():
