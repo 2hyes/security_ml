@@ -8,11 +8,17 @@
 
 import UIKit
 
+struct DataInfo {
+    let type: String
+    let count: Int
+}
+
 class ViewController: UIViewController {
 
     private let typeOfPreds = ["Normal", "Analysis", "Backdoor", "DoS", "Exploits", "Fuzzers", "Generic", "Reconnaissance", "Shellcodoe", "Worms"]
     private var predsTypeCount = [String : Int]()
-    
+    private var attackTypesInfo = [DataInfo]()
+
     @IBOutlet var getButton: UIButton!
     @IBOutlet var pieChartView: PieChartView!
     @IBOutlet weak var tableView: UITableView!
@@ -20,7 +26,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        tableView.dataSource = self
     }
 
     
@@ -46,16 +51,23 @@ class ViewController: UIViewController {
             predsTypeCount["Shellcodoe"] = receivedResult.filter{ return $0 == "Shellcodoe" }.count
             predsTypeCount["Worms"] = receivedResult.filter{ return $0 == "Worms" }.count
             
+            sortAttackTypes()
+            
             let normal = receivedResult.filter { return $0 == "Normal" }
             let abnormal = receivedResult.filter { return $0 != "Normal"}
             resultCount.append(normal.count)
             resultCount.append(abnormal.count)
-//            DispatchQueue.main.async {
-//                self.resultLabel.text = "\(normal.count) \(abnormal.count)"
-//            }
             
             completion(resultCount)
         })
+    }
+    
+    private func sortAttackTypes() {
+        var attackTypes = [DataInfo]()
+        for (type, count) in predsTypeCount {
+            attackTypes.append(DataInfo(type: type, count: count))
+        }
+        attackTypesInfo = attackTypes.sorted { $0.count > $1.count }
     }
     
     
@@ -68,6 +80,7 @@ class ViewController: UIViewController {
             ]
             DispatchQueue.main.async {
                 self.pieChartView.animateChart()
+                self.tableView.dataSource = self
                 self.tableView.reloadData()
             }
         }
@@ -83,16 +96,24 @@ extension ViewController: UITableViewDelegate {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PredictionCell", for: indexPath) as! PredictionTableViewCell
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "PredictionCell",
+            for: indexPath) as! PredictionTableViewCell
+
+        let attackType: String = attackTypesInfo[indexPath.row].type
+        let attackCount: Int = attackTypesInfo[indexPath.row].count
         
-        let attackType: String = typeOfPreds[indexPath.row]
         cell.textLabel?.text = attackType
+        
+        
+        //let attackType: String = typeOfPreds[indexPath.row]
+        //cell.textLabel?.text = attackType
         cell.detailTextLabel?.text = attackType == "Normal" ? "Normal" : "Attack"
-        
-        if let count = predsTypeCount[attackType] {
-            cell.predictionCountLabel?.text = "\(count)"
-        } else { cell.predictionCountLabel?.text = "0" }
-        
+
+        //if let count = predsTypeCount[attackType] {
+        //    cell.predictionCountLabel?.text = "\(count)"
+        //} else { cell.predictionCountLabel?.text = "0" }
+        cell.predictionCountLabel?.text = "\(attackCount)"
         return cell
     }
 }
