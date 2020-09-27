@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,47 +17,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4K-kZ-7dh">
-                                <rect key="frame" x="75" y="204" width="264" height="57"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ah-bH-bzb" customClass="PieChartView" customModule="PieChart" customModuleProvider="target">
-                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <rect key="frame" x="87" y="80" width="240" height="240"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="0ah-bH-bzb" secondAttribute="height" multiplier="1:1" id="HYT-sL-JbE"/>
-                                    <constraint firstAttribute="width" constant="240" id="bRJ-ew-OTp"/>
+                                    <constraint firstAttribute="width" constant="240" id="ZIa-f9-Jgh"/>
+                                    <constraint firstAttribute="width" secondItem="0ah-bH-bzb" secondAttribute="height" multiplier="1:1" id="aVg-Ng-feC"/>
+                                    <constraint firstAttribute="height" constant="240" id="f3X-2P-ptE"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RE-zl-vaB">
-                                <rect key="frame" x="191" y="663" width="86" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RE-zl-vaB">
+                                <rect key="frame" x="161.5" y="350" width="91" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="ogD-Xd-e18"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Get"/>
                                 <connections>
                                     <action selector="getButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDC-QG-vaa"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="bid-2Y-Trh">
+                                <rect key="frame" x="0.0" y="396" width="414" height="446"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PredictionCell" textLabel="lG4-ZR-lr3" detailTextLabel="rAX-rI-OFG" style="IBUITableViewCellStyleSubtitle" id="1Pk-n4-m6W" customClass="PredictionTableViewCell" customModule="PieChart">
+                                        <rect key="frame" x="20" y="55.5" width="374" height="55.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Pk-n4-m6W" id="wZc-pc-bmm">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lG4-ZR-lr3">
+                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rAX-rI-OFG">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjh-mq-hEq">
+                                                    <rect key="frame" x="256" y="17" width="98" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="PredictionCell"/>
+                                        <connections>
+                                            <outlet property="predictionCountLabel" destination="pjh-mq-hEq" id="GlJ-yj-REy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3RE-zl-vaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="191" id="0sB-wP-tOU"/>
-                            <constraint firstItem="0ah-bH-bzb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Hu-4T-ckG"/>
-                            <constraint firstItem="0ah-bH-bzb" firstAttribute="top" secondItem="c4K-kZ-7dh" secondAttribute="bottom" constant="67" id="Diw-3W-6Js"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3RE-zl-vaB" secondAttribute="bottom" constant="151" id="YRX-rD-ebA"/>
-                            <constraint firstItem="c4K-kZ-7dh" firstAttribute="centerX" secondItem="0ah-bH-bzb" secondAttribute="centerX" id="d1h-wg-kgM"/>
-                            <constraint firstItem="c4K-kZ-7dh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="k1F-wK-t68"/>
-                            <constraint firstItem="c4K-kZ-7dh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="mvl-h9-xrf"/>
-                            <constraint firstItem="0ah-bH-bzb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z72-if-AeP"/>
+                            <constraint firstItem="bid-2Y-Trh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="090-Q4-5wf"/>
+                            <constraint firstItem="3RE-zl-vaB" firstAttribute="top" secondItem="0ah-bH-bzb" secondAttribute="bottom" constant="30" id="6KI-M6-eyG"/>
+                            <constraint firstItem="0ah-bH-bzb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="Fkw-94-bfS"/>
+                            <constraint firstItem="bid-2Y-Trh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MPh-XU-CKK"/>
+                            <constraint firstItem="3RE-zl-vaB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJ1-Pm-fRs"/>
+                            <constraint firstItem="3RE-zl-vaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161.5" id="YN7-fi-JaD"/>
+                            <constraint firstItem="bid-2Y-Trh" firstAttribute="top" secondItem="3RE-zl-vaB" secondAttribute="bottom" constant="10" id="fUo-VS-OSr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bid-2Y-Trh" secondAttribute="bottom" constant="20" id="qKn-9Z-Hgz"/>
+                            <constraint firstItem="0ah-bH-bzb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="tgk-Tg-ZRe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="getButton" destination="3RE-zl-vaB" id="VkU-5s-ijY"/>
                         <outlet property="pieChartView" destination="0ah-bH-bzb" id="6r5-yc-gvb"/>
-                        <outlet property="resultLabel" destination="c4K-kZ-7dh" id="bHz-RA-u4n"/>
+                        <outlet property="tableView" destination="bid-2Y-Trh" id="Iqo-bh-OZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -64,4 +105,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
