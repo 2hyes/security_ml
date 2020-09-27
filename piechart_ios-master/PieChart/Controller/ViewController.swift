@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
     }
-
     
     private func receivePredResutFromServer(completion: @escaping ([Int]) -> Void){
         // receive data from the server
@@ -68,8 +67,7 @@ class ViewController: UIViewController {
             attackTypes.append(DataInfo(type: type, count: count))
         }
         attackTypesInfo = attackTypes.sorted { $0.count > $1.count }
-    }
-    
+    }    
     
     @IBAction func getButtonPressed(_ sender: Any) {
         receivePredResutFromServer { (data) in
@@ -104,15 +102,7 @@ extension ViewController: UITableViewDataSource {
         let attackCount: Int = attackTypesInfo[indexPath.row].count
         
         cell.textLabel?.text = attackType
-        
-        
-        //let attackType: String = typeOfPreds[indexPath.row]
-        //cell.textLabel?.text = attackType
         cell.detailTextLabel?.text = attackType == "Normal" ? "Normal" : "Attack"
-
-        //if let count = predsTypeCount[attackType] {
-        //    cell.predictionCountLabel?.text = "\(count)"
-        //} else { cell.predictionCountLabel?.text = "0" }
         cell.predictionCountLabel?.text = "\(attackCount)"
         return cell
     }
