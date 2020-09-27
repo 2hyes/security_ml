@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     private let typeOfPreds = ["Normal", "Analysis", "Backdoor", "DoS", "Exploits", "Fuzzers", "Generic", "Reconnaissance", "Shellcodoe", "Worms"]
     private var predsTypeCount = [String : Int]()
     
-//    @IBOutlet var resultLabel: UILabel!
     @IBOutlet var getButton: UIButton!
     @IBOutlet var pieChartView: PieChartView!
     @IBOutlet weak var tableView: UITableView!
@@ -89,8 +88,7 @@ extension ViewController: UITableViewDataSource {
         let attackType: String = typeOfPreds[indexPath.row]
         cell.textLabel?.text = attackType
         cell.detailTextLabel?.text = attackType == "Normal" ? "Normal" : "Attack"
-        //cell.textLabel?.text = attackType == "Normal" ? "Normal" : "Attack"
-        //cell.detailTextLabel?.text = attackType
+        
         if let count = predsTypeCount[attackType] {
             cell.predictionCountLabel?.text = "\(count)"
         } else { cell.predictionCountLabel?.text = "0" }
