@@ -47,4 +47,4 @@ activation ='relu’, solver = 'adam’, alpha = 1e-4, H = (70, 58, 77, 95, 57),
 
 ## 발표 및 시연 영상
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p4SZcEooRak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[발표 영상](https://youtu.be/p4SZcEooRak?t=410)
