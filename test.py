@@ -26,7 +26,7 @@ def test_preds(model, selected_date):
     X_test = testSample.drop(columns=['id','attack_cat','label'])
     #X_test, _ = label_encoding(testSample)
 
-    scaler = pickle.load(open('scaler.pkl','rb'))
+    scaler = pickle.load(open('scaler_train.pkl','rb'))
     X_test = scaler.transform(X_test)
 
 
