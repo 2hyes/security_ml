@@ -58,4 +58,5 @@ python test.py
 
 ## 발표 및 시연 영상
 
+[발표 자료](https://github.com/2hyes/security_ml/blob/master/presenstation/%5B%EB%B0%9C%ED%91%9C%5D%EC%9E%A1%EC%95%98%EB%8B%A4%2C%20%EB%96%BD!.pdf)
 [발표 영상](https://youtu.be/p4SZcEooRak?t=410)
