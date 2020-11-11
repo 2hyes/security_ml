@@ -1,24 +1,50 @@
 # security_ml
-Detection of cyber attack log data(using UNSW-NB15)
 
-1. 다운로드받은 경로로 이동
-2. Cmd창에서 python app.py   
-3. 웹서버 입력창에 '1~4' 입력 
- 
+## 1.개요
+- 목표: Detect cyber attack log data(using UNSW-NB15) \
+사이버 공격 로그 데이터(UNSW-NB15)로 인공신경망을 학습시켜, 웹 서버를 통해 iOS앱으로 로그 정보에 대한 공격여부 및 공격 정보 예측 결과 시각화한다.
 
-### 개발환경  
+## 2. 예측 모델 소개
+- decision tree
+- MLP(인공신경망): training accuracy = 0.85, test accuracy = 0.823
+- AdaBoost
+- SVC
+- GaussianNB
+
+activation ='relu’, solver = 'adam’, alpha = 1e-4, H = (70, 58, 77, 95, 57), max_iter=10000
+를 파라미터로 갖는 MLP를 최종 모델로 선택한다.
+
+## 3. 개발환경  
+1) 개발 환경
 * Windows 10. i5-7200U, RAM 8.0GB, 64bit
 * macOS Catalina 10.15.5
 * conda 4.8.4
 * XCode version 11.4.1
 
-### 개발 언어
+2) 개발 언어
 * Python 3.8.5 
 * Swift 4
 
-### 필요 라이브러리  
+3) 라이브러리  
 * Data analysis
    * numpy 1.19.1, pandas 1.1.1, scikit-learn 0.23.2, scipy 1.5.2, sklearn 0.0
 * Server
    * Flask 1.1.2
+   
+## 코드 실행 및 재현 방법
 
+1. flask 웹 서버 실행
+```
+ python app.py
+ ```
+2. date칸에 1 ~ 4 숫자 중 입력 \
+: 테스트셋을 5천개씩 나누어 일일 로그로 가정했다.
+
+3. 웹서버에 입력한 해당 일에 대한 예측 결과 출력됨
+
+4. Xcode에서 'Get'버튼을 누르면, 바로 결과 plot이 생성됨
+: 시연영상 6:51에서 확인 가능
+
+## 발표 및 시연 영상
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p4SZcEooRak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
