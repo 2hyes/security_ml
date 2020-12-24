@@ -5,7 +5,7 @@ import test
 import preds_mapping
 
 app = Flask(__name__)
-model = pickle.load(open('.\AdaBoostmodel.pkl', 'rb'))
+model = pickle.load(open('.\mlpmodel.pkl', 'rb'))
 
 def getPredictedAttack():
     if request.method == 'POST':
